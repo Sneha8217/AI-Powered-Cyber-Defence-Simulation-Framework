@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # AI-Powered Cyber Defence Simulation Framework (ACDSF)
 
 This project contains the implementation of **Member 3 (Blue Team AI & Multi-Agent Defence)** and **Member 4 (Evaluation, XAI Dashboard & Integration)**.
@@ -121,3 +122,7 @@ npm install
 npm start
 ```
 Go to `http://localhost:3000` to interact with the Administrator, Analyst, Incident Manager, and Executive views!
+=======
+# AI-Powered-Cyber-Defence-Simulation-Framework
+AI-Powered Cyber Defence Simulation Framework (ACDSF) – Final Year Engineering Project using AI, Reinforcement Learning, FastAPI, React, Docker, and Explainable AI.
+>>>>>>> b208f45d6683485eebd97a74a4f57fd4bc2419a4
