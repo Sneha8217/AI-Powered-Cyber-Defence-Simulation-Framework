@@ -1,0 +1,15 @@
+gymnasium>=0.28.1
+numpy>=1.24.3
+torch>=2.0.0
+stable-baselines3>=2.0.0
+fastapi>=0.95.0
+uvicorn>=0.22.0
+pydantic>=1.10.8
+requests>=2.31.0
+scikit-learn>=1.2.2
+matplotlib>=3.7.1
+networkx>=3.1
+prometheus_client>=0.17.0
+# Optional/Dynamic support
+# shap>=0.41.0
+# lime>=0.2.0.1

@@ -1,0 +1,101 @@
+{
+  "annotations": {
+    "list": [
+      {
+        "builtIn": 1,
+        "datasource": "-- Grafana --",
+        "enable": true,
+        "hide": true,
+        "name": "Annotations & Alerts",
+        "type": "dashboard"
+      }
+    ]
+  },
+  "editable": true,
+  "fiscalYearStartMonth": 0,
+  "graphTooltip": 0,
+  "id": 1,
+  "links": [],
+  "liveNow": false,
+  "panels": [
+    {
+      "collapsed": false,
+      "gridPos": {
+        "h": 4,
+        "w": 6,
+        "x": 0,
+        "y": 0
+      },
+      "id": 1,
+      "title": "Global Threat Level",
+      "type": "stat",
+      "datasource": {
+        "type": "prometheus",
+        "uid": "prom-datasource"
+      },
+      "targets": [
+        {
+          "expr": "acdssf_global_threat_level",
+          "refId": "A"
+        }
+      ]
+    },
+    {
+      "collapsed": false,
+      "gridPos": {
+        "h": 4,
+        "w": 6,
+        "x": 6,
+        "y": 0
+      },
+      "id": 2,
+      "title": "RL Agent Average Reward",
+      "type": "stat",
+      "datasource": {
+        "type": "prometheus",
+        "uid": "prom-datasource"
+      },
+      "targets": [
+        {
+          "expr": "acdssf_rl_average_reward",
+          "refId": "A"
+        }
+      ]
+    },
+    {
+      "collapsed": false,
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 0,
+        "y": 4
+      },
+      "id": 3,
+      "title": "Active System Incidents Count",
+      "type": "timeseries",
+      "datasource": {
+        "type": "prometheus",
+        "uid": "prom-datasource"
+      },
+      "targets": [
+        {
+          "expr": "acdssf_soc_active_incidents",
+          "refId": "A"
+        }
+      ]
+    }
+  ],
+  "schemaVersion": 36,
+  "style": "dark",
+  "tags": ["acdssf", "security"],
+  "time": {
+    "from": "now-1h",
+    "to": "now"
+  },
+  "timepicker": {},
+  "timezone": "",
+  "title": "ACDSF Operational Security Command Center",
+  "uid": "acdssf_ops_center",
+  "version": 1,
+  "weekStart": ""
+}

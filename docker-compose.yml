@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  acdssf-core:
+    build: .
+    container_name: acdssf_core_services
+    ports:
+      - "8030:8030" # Dashboard API Backend
+      - "8010:8010" # XAI Explanation API
+      - "8020:8020" # Prometheus Metrics Exporter
+    environment:
+      - PYTHONUNBUFFERED=1
+    volumes:
+      - .:/app
+    restart: unless-stopped
